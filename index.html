@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HindSagar Biswas</title>
+
+    <!-- Fontawesome 5 -->
+    <script src="https://kit.fontawesome.com/c9fec141b0.js" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="graph"></div>
+
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#languages">Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <!-- <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col hero-container scrollspy" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0"
+                tabindex="0">
+                <div id="home" class="hero d-flex flex-column justify-content-center align-items-center p-3">
+                    <section id="first-section" class="hero-content">
+                        <h4>Hi, I'm <span class="text-light">Hind Sagar Biswas</span></h4>
+                        <h1 class="big-text">I am a <span id="type-writer-target">Programmer</span><span
+                                class="fa-fade">_</span></h1>
+                        <p class="text-uppercase">I will turn your vision into reality...</p>
+                        <!-- <p class="divider"> -->
+                        <ul class="social-container">
+                            <li><a href="https://github.com/hind-sagar-biswas" class="social-link"><i
+                                        class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://web.facebook.com/hindsagar.biswas/" class="social-link"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/hind_sagar_biswas/" class="social-link"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="mailto:hindsbhk@gmail.com" class="social-link"><i
+                                        class="fa-solid fa-envelope"></i></a></li>
+                        </ul>
+                        <div class="divider"></div>
+                        <div class="link-buttons d-flex">
+                            <a class="link-btn" href="#skills">Skills</a>
+                            <a class="link-btn" href="#languages">Languages</a>
+                            <a class="link-btn" href="#contact">Contact Me</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="skills" class="hero d-flex flex-column justify-content-center align-items-center p-3">
+                    <section class="hero-content">
+                        <h2 class="text-uppercase"><i class="fa-solid fa-terminal"></i> Skills</h2>
+                        <pre
+                            class="cmd"><span class="text-warning">&gt; </span><span id="skills-cmd"></span><span class="fa-fade">|</span></pre>
+                        <div id="skill-list" class="hide"></div>
+                        <a class="skill text-decoration-none" href="#languages"><i class="fa-solid fa-angles-down"></i>
+                            Multiple Languages &amp; Frameworks</a>
+                    </section>
+                </div>
+
+                <div id="languages" class="hero d-flex flex-column justify-content-center align-items-center p-3">
+                    <section class="hero-content">
+                        <h2 class="text-uppercase"><i class="fa-solid fa-terminal"></i> Languages &amp; Frameworks</h2>
+                        <pre
+                            class="cmd"><span class="text-warning">&gt; </span><span id="languages-cmd"></span><span class="fa-fade">|</span></pre>
+                        <div id="language-list" class="hide"></div>
+                    </section>
+                </div>
+
+                <div id="contact" class="hero d-flex flex-column justify-content-center align-items-center p-3">
+                    <section class="hero-content">
+                        <h2 class="text-uppercase"><i class="fa-solid fa-terminal"></i> Contact Me</h2>
+                        <pre
+                            class="cmd"><span class="text-warning">&gt;</span> <a href="mailto:hindsbhk@gmail.com" class="text-decoration-none d-inline text-info">hindsbhk@gmail.com</a></pre>
+                        <form action="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="">
+                                <label for="email">Your Email Address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="mb-3">
+                            <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="text-uppercase"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center profile-col p-3">
+                <div class="profile-container">
+                    <div class="round-container">
+                        <div class="social-container">
+                            <div class="social-list">
+                                <a href="https://github.com/hind-sagar-biswas" class="scroll-target"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://web.facebook.com/hindsagar.biswas/" class="scroll-target"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/hind_sagar_biswas/" class="scroll-target"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="mailto:hindsbhk@gmail.com" class="scroll-target"><i
+                                        class="fa-solid fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="moving-layers layer-1"></div>
+                        <div class="moving-layers layer-2"></div>
+                        <div class="moving-layers layer-3"></div>
+                        <div class="moving-layers layer-4"></div>
+                        <img src="./assets/images/hind-biswas.jpg" alt="Hind Sagar Biswas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/maze.js"></script>
+    <script src="./assets/js/typewriter.js"></script>
+    <script src="./assets/js/scrollspy.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
