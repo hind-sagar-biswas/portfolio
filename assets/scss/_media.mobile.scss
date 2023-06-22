@@ -1,0 +1,15 @@
+@media (max-width: $md) {
+	nav {
+		background-color: $grey_800;
+	}
+
+	.mobile-hide {
+		display: none !important;
+	}
+
+	.hero {
+		.hero-content {
+			width: 100%;
+		}
+	}
+}

@@ -1,25 +1,24 @@
-$grey_50 : #f5f7fa ;
-$grey_100 : #e4e7eb ;
-$grey_200 : #cbd2d9 ;
-$grey_300 : #9aa5b1 ;
-$grey_400 : #7b8794 ;
-$grey_500 : #616e7c ;
-$grey_600 : #52606d ;
-$grey_700 : #3e4c59 ;
-$grey_800 : #323f4b ;
-$grey_900 : #1f2933 ;
+$grey_50: #f5f7fa;
+$grey_100: #e4e7eb;
+$grey_200: #cbd2d9;
+$grey_300: #9aa5b1;
+$grey_400: #7b8794;
+$grey_500: #616e7c;
+$grey_600: #52606d;
+$grey_700: #3e4c59;
+$grey_800: #323f4b;
+$grey_900: #1f2933;
 
-
-$danger_0 : #ff225e;
-$danger_1 : #cc1b4b;
-$warning_0 : #ff894a;
-$warning_1 : #f47847;
-$primary_0 : #00ffffff;
-$primary_1 : #0a9fbd;
-$info_0 : #63bbff;
-$info_1 : #4a96c2;
-$success_0 : #73eca2;
-$success_1 : #61c688;
+$danger_0: #ff225e;
+$danger_1: #cc1b4b;
+$warning_0: #ff894a;
+$warning_1: #f47847;
+$primary_0: #00ffffff;
+$primary_1: #0a9fbd;
+$info_0: #63bbff;
+$info_1: #4a96c2;
+$success_0: #73eca2;
+$success_1: #61c688;
 
 $colors: (
 	"primary": $primary_0,
@@ -29,3 +28,10 @@ $colors: (
 	"warning": $warning_0,
 	"secondary": $grey_400,
 );
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
