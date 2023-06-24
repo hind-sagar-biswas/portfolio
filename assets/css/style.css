@@ -222,6 +222,10 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   transition: 0.3s all ease-out;
 }
 
+.hide-comp {
+  opacity: 0;
+}
+
 .divider {
   width: 100%;
   border: 2px solid #616e7c;
@@ -421,7 +425,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 20s;
   width: calc(100% - 0px);
-  background-image: conic-gradient(from 72deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 69%, #323f4b 69% 70%, #616e7c 70% 100%);
+  background-image: conic-gradient(from 72deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 61%, #323f4b 61% 62%, #616e7c 62% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-2 {
   background-color: #616e7c;
@@ -429,7 +433,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 10s;
   width: calc(100% - 15px);
-  background-image: conic-gradient(from 144deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 65%, #616e7c 65% 66%, #323f4b 66% 100%);
+  background-image: conic-gradient(from 144deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 16%, #616e7c 16% 17%, #323f4b 17% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-3 {
   background-color: #616e7c;
@@ -437,7 +441,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 6.6666666667s;
   width: calc(100% - 30px);
-  background-image: conic-gradient(from 216deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 66%, #323f4b 66% 67%, #616e7c 67% 100%);
+  background-image: conic-gradient(from 216deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 73%, #323f4b 73% 74%, #616e7c 74% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-4 {
   background-color: #616e7c;
@@ -445,7 +449,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 5s;
   width: calc(100% - 45px);
-  background-image: conic-gradient(from 288deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 43%, #616e7c 43% 44%, #323f4b 44% 100%);
+  background-image: conic-gradient(from 288deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 12%, #616e7c 12% 13%, #323f4b 13% 100%);
 }
 .profile-col .profile-container .round-container img {
   border-radius: calc(175px + 4em);

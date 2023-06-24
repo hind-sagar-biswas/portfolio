@@ -3,7 +3,6 @@ html {
 	scroll-snap-type: mandatory;
 }
 
-
 body {
 	background-color: $grey_900;
 	color: $grey_300;
@@ -71,6 +70,10 @@ form {
 	transition: 0.3s all ease-out;
 }
 
+.hide-comp {
+	opacity: 0;
+}
+
 .divider {
 	width: 100%;
 	border: 2px solid $grey_500;
@@ -116,7 +119,6 @@ form {
 .blocked {
 	background-color: darken($grey_900, 3%);
 }
-
 
 .link-buttons,
 .project-links {

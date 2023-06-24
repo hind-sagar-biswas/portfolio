@@ -97,6 +97,20 @@ function listLanguagesAndFrameworks(languages, frameworks) {
 	});
 }
 
+
+const button = document.getElementById("go-to-top");
+const windowWidth = window.innerWidth;
+
+function showButton() {
+	if (windowWidth <= 800 && window.scrollY > 0) {
+		button.classList.remove("hide-comp");
+	} else {
+		button.classList.add("hide-comp");
+	}
+}
+
+window.addEventListener("scroll", showButton);
+
 typeWriterRepeat(
 	"type-writer-target",
 	"Programmer",
