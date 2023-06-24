@@ -1,0 +1,90 @@
+//  <div class="carousel-item">
+//         <div class="project w-100">
+//             <h6 class="project-type text-secondary d-flex justify-content-between"><span>Web Tool</span><span
+//                     class="badge bg-danger">stable</span></h6>
+//             <h3 class="project-title">CSS Gen</h3>
+//             <ul class="project-tags">
+//                 <li class="project-tag">tool</li>
+//                 <li class="project-tag">generator</li>
+//             </ul>
+//             <div class="project-description">A Free GUI (Graphical User Interface) web tool to generate CSS codes
+//                 visually.
+//                 Change the values and see those changes live!</div>
+//             <ul class="project-languages">
+//                 <li>javascript</li>
+//                 <li>html</li>
+//                 <li>css</li>
+//             </ul>
+//             <div class="d-flex justify-content-end"><a class="project-link"
+//                     href="http://coderaptors.epizy.com/cssgen/">View</a><a class="project-link"
+//                     href="https://github.com/hind-sagar-biswas/cssgen">Code</a></div>
+//         </div>
+//     </div>
+.carousel-control-next, .carousel-control-prev {
+	opacity: 0.1;
+	background-color: rgba(31, 41, 51, 0.4);
+	transition: all 0.15s;
+	
+	// height: 100%;
+
+	:hover {
+		opacity: 1;
+	}
+}
+.carousel-item {
+	background-color: $grey_800;
+	padding: 10px;
+	padding-bottom: 50px;
+	// min-height: 400px;
+	border-radius: 5px;
+
+	.project {
+		height: 100%;
+
+		.project-description {
+			background-color: $grey_700;
+			padding: 10px 10px;
+			border-radius: 5px;
+			margin: 10px;
+			margin-inline: 0;
+		}
+	}
+
+	.cmd {
+		background-color: $grey_900;
+		padding: 10px 20px;
+		border-radius: 5px;
+	}
+
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0;
+		gap: 5px;
+
+		li {
+			list-style-type: none;
+			padding: 2px 5px;
+			border-radius: 4px;
+		}
+
+		li.project-tag {
+			font-size: small;
+			font-weight: bolder;
+			padding: 1px 5px;
+			background-color: $primary_0;
+			color: $grey_900;
+			text-transform: lowercase;
+		}
+		li.project-language {
+			background-color: $warning_0;
+			color: $grey_900;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+	}
+}

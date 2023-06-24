@@ -39,6 +39,9 @@
                         <a class="nav-link" href="#languages">Languages</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact Me</a>
                     </li>
                 </ul>
@@ -75,6 +78,7 @@
                         <div class="link-buttons d-flex">
                             <a class="link-btn" href="#skills">Skills</a>
                             <a class="link-btn" href="#languages">Languages</a>
+                            <a class="link-btn" href="#projects">Projects</a>
                             <a class="link-btn" href="#contact">Contact <span class="mobile-hide">Me</span></a>
                         </div>
                     </section>
@@ -100,6 +104,31 @@
                     </section>
                 </div>
 
+                <div id="projects" class="hero d-flex flex-column justify-content-center align-items-center p-3">
+                    <section class="hero-content">
+                        <h2 class="text-uppercase mb-3"><i class="fa-solid fa-terminal"></i> Some Works</h2>
+                        <div id="projectCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div id="project-indicators" class="carousel-indicators">
+                                <button type="button" data-bs-target="#projectCarouselIndicators" data-bs-slide-to="0"
+                                    class="active"></button>
+                            </div>
+                            <div id="projects-container" class="carousel-inner">
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#projectCarouselIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#projectCarouselIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
                 <div id="contact" class="hero d-flex flex-column justify-content-center align-items-center p-3">
                     <section class="hero-content">
                         <h2 class="text-uppercase"><i class="fa-solid fa-terminal"></i> Contact Me</h2>
@@ -115,10 +144,12 @@
                                 <label for="subject">Subject</label>
                             </div>
                             <div class="mb-3">
-                            <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="5"
+                                    placeholder=""></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="text-uppercase"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                                <button type="submit" class="text-uppercase"><i class="fa-solid fa-paper-plane"></i>
+                                    Send</button>
                             </div>
                         </form>
                     </section>
@@ -155,10 +186,10 @@
     <script src="./assets/js/maze.js"></script>
     <script src="./assets/js/typewriter.js"></script>
     <script src="./assets/js/scrollspy.js"></script>
+    <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/app.js"></script>
-    <script>
 
-    </script>
+    
 </body>
 
 </html>

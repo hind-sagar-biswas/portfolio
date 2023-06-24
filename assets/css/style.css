@@ -1,3 +1,62 @@
+.carousel-control-next, .carousel-control-prev {
+  opacity: 0.1;
+  background-color: rgba(31, 41, 51, 0.4);
+  transition: all 0.15s;
+}
+.carousel-control-next :hover, .carousel-control-prev :hover {
+  opacity: 1;
+}
+
+.carousel-item {
+  background-color: #323f4b;
+  padding: 10px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+.carousel-item .project {
+  height: 100%;
+}
+.carousel-item .project .project-description {
+  background-color: #3e4c59;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-inline: 0;
+}
+.carousel-item .cmd {
+  background-color: #1f2933;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.carousel-item ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 5px;
+}
+.carousel-item ul li {
+  list-style-type: none;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.carousel-item ul li.project-tag {
+  font-size: small;
+  font-weight: bolder;
+  padding: 1px 5px;
+  background-color: aqua;
+  color: #1f2933;
+  text-transform: lowercase;
+}
+.carousel-item ul li.project-language {
+  background-color: #ff894a;
+  color: #1f2933;
+}
+.carousel-item a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
 html {
   scroll-behavior: initial;
   scroll-snap-type: mandatory;
@@ -258,7 +317,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 20s;
   width: calc(100% - 0px);
-  background-image: conic-gradient(from 72deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 15%, #323f4b 15% 16%, #616e7c 16% 100%);
+  background-image: conic-gradient(from 72deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 36%, #323f4b 36% 37%, #616e7c 37% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-2 {
   background-color: #616e7c;
@@ -266,7 +325,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 10s;
   width: calc(100% - 15px);
-  background-image: conic-gradient(from 144deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 98%, #616e7c 98% 99%, #323f4b 99% 100%);
+  background-image: conic-gradient(from 144deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 45%, #616e7c 45% 46%, #323f4b 46% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-3 {
   background-color: #616e7c;
@@ -274,7 +333,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 6.6666666667s;
   width: calc(100% - 30px);
-  background-image: conic-gradient(from 216deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 14%, #323f4b 14% 15%, #616e7c 15% 100%);
+  background-image: conic-gradient(from 216deg at 50% 50%, #323f4b 0% 1%, #616e7c 1% 1%, #323f4b 1% 2%, #616e7c 2% 100%);
 }
 .profile-col .profile-container .round-container .moving-layers.layer-4 {
   background-color: #616e7c;
@@ -282,7 +341,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   background-position: 0px 0px;
   animation-duration: 5s;
   width: calc(100% - 45px);
-  background-image: conic-gradient(from 288deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 42%, #616e7c 42% 43%, #323f4b 43% 100%);
+  background-image: conic-gradient(from 288deg at 50% 50%, #616e7c 0% 1%, #323f4b 1% 25%, #616e7c 25% 26%, #323f4b 26% 100%);
 }
 .profile-col .profile-container .round-container img {
   border-radius: calc(175px + 4em);
@@ -343,11 +402,11 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   font-size: 1.5em;
 }
 
-.link-buttons {
+.link-buttons, .project-links {
   width: 100%;
   gap: 5px;
 }
-.link-buttons .link-btn {
+.link-buttons .link-btn, .project-links .link-btn {
   text-decoration: none;
   display: block;
   padding: 5px 15px;
@@ -358,7 +417,7 @@ form button[type=submit]:hover, form button[type=submit]:focus {
   text-transform: uppercase;
   transition: all 0.3s ease-out;
 }
-.link-buttons .link-btn:hover {
+.link-buttons .link-btn:hover, .project-links .link-btn:hover {
   background-color: #e4e7eb;
   background: rgb(115, 236, 162);
   background: linear-gradient(90deg, rgb(0, 255, 255) 0%, rgb(0, 212, 255) 100%);
