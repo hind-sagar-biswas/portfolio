@@ -1,0 +1,24 @@
+
+/* Track */
+::-webkit-scrollbar {
+	width: 11px;
+	/* width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+	background: $primary_0;
+	/* background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $primary_1;
+	border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: darken($primary_1, 10%);
+	/* color of the scrollbar handle on hover */
+}
