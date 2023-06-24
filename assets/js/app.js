@@ -26,37 +26,39 @@ function listLanguages(languages, target) {
 		languageContainer.id = "langs";
 		target.appendChild(languageContainer);
 
-		let index = 0
+		let index = 0;
 
 		for (const languageObjectName in languages) {
 			if (Object.hasOwnProperty.call(languages, languageObjectName)) {
 				const languageObj = languages[languageObjectName];
 
 				const languageContainer = document.getElementById("langs");
-				setTimeout(() => {
+				((index) => {
+					setTimeout(() => {
+						const language = document.createElement("div");
+						language.classList.add("tag");
 
-					const language = document.createElement("div");
-					language.classList.add("tag");
+						const icon = document.createElement("i");
+						icon.classList.add(languageObj.icon[0], languageObj.icon[1]);
+						language.appendChild(icon);
 
-					const icon = document.createElement("i");
-					icon.classList.add(languageObj.icon[0], languageObj.icon[1]);
-					language.appendChild(icon);
+						const text = document.createElement("span");
+						text.textContent = ` ${languageObj.name}`;
+						language.appendChild(text);
 
-					const text = document.createElement("span");
-					text.textContent = ` ${languageObj.name}`;
-					language.appendChild(text);
+						languageContainer.appendChild(language);
 
-					languageContainer.appendChild(language);
-
-					if (index >= Object.keys(languages).length - 1) {
-						resolve();
-					}
-				}, 100 * index);
+						if (index >= Object.keys(languages).length - 1) {
+							resolve();
+						}
+					}, 100 * index);
+				})(index);
 				index++;
 			}
 		}
 	});
 }
+
 
 function listFrameworks(frameworks, target) {
 	const frameworkContainer = document.createElement("div");

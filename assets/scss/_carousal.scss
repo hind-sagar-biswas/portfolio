@@ -77,8 +77,9 @@
 			text-transform: lowercase;
 		}
 		li.project-language {
-			background-color: $warning_0;
-			color: $grey_900;
+			// background-color: $warning_0;
+			color: $grey_400;
+			font-size: large;
 		}
 	}
 
