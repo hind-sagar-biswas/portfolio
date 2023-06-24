@@ -3,11 +3,15 @@
 		background-color: $grey_800;
 	}
 
-	#go-to-top{
+	#home {
+		min-height: 100svh;
+	}
+
+	#go-to-top {
 		z-index: 1000;
 		position: fixed;
-		right: 50px;
-		bottom: 50px;
+		right: 20px;
+		bottom: 20px;
 
 		display: flex;
 		justify-content: center;
@@ -16,7 +20,7 @@
 		width: 50px;
 		aspect-ratio: 1;
 		border-radius: 5px;
-		
+
 		box-shadow: 1px 1px 3px $grey_800;
 		text-decoration: none;
 		color: $grey_900;
