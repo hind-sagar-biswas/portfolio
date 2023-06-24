@@ -97,7 +97,7 @@ const projects = [
 	},
 	{
 		type: "PHP Object",
-		languages: ["php"],
+		languages: ["php", "mysql"],
 		tags: ["package", "OOP", "user login"],
 		cmd: null,
 		project_link: null,
@@ -110,7 +110,7 @@ const projects = [
 	},
 	{
 		type: "PHP Object",
-		languages: ["php"],
+		languages: ["php", "mysql"],
 		tags: ["package", "OOP", "like-unlike"],
 		cmd: null,
 		project_link: null,
@@ -118,7 +118,7 @@ const projects = [
 		image: null,
 		status: "stable",
 		title: "unLaiked",
-		description: "PHP OOP Like-unlike system for comments and posts!",
+		description: "PHP OOP Like-unlike system (along with MySQL) for comments and posts. Ready to implement to your project!",
 	},
 	{
 		type: "Web App",
@@ -143,6 +143,6 @@ const projects = [
 		image: null,
 		status: "stable",
 		title: "Weather React",
-		description: "React based weather app with sleek minimalistic design.",
+		description: "React based weather app with sleek minimalistic design. Uses Fetch API and Geolocation to retract weather data.",
 	},
 ];

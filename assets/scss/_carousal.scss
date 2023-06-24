@@ -58,7 +58,6 @@
 
 	ul {
 		display: flex;
-		justify-content: flex-start;
 		padding: 0;
 		gap: 5px;
 
@@ -77,8 +76,7 @@
 			text-transform: lowercase;
 		}
 		li.project-language {
-			// background-color: $warning_0;
-			color: $grey_400;
+			color: $warning_0;
 			font-size: large;
 		}
 	}
