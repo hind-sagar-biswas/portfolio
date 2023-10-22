@@ -29,6 +29,32 @@ const frameworks = {
 
 const projects = [
 	{
+		type: "Composer Library",
+		languages: ["php"],
+		tags: ["library", "query builder"],
+		cmd: "composer require hindbiswas/quebee",
+		project_link: "https://packagist.org/packages/hindbiswas/quebee",
+		source_code_link: "https://github.com/hind-sagar-biswas/quebee/",
+		image: null,
+		status: "stable",
+		title: "QueBee",
+		description:
+			"The QueBee Class is a lightweight composer package to help you through MySQL query build and management like breeze.",
+	},
+	{
+		type: "Composer Library",
+		languages: ["php"],
+		tags: ["library", "env", "env manager"],
+		cmd: "composer require hindbiswas/phpdotenv",
+		project_link: "https://packagist.org/packages/hindbiswas/phpdotenv",
+		source_code_link: "https://github.com/hind-sagar-biswas/phpdotenv/",
+		image: null,
+		status: "stable",
+		title: "PHP dotEnv",
+		description:
+			"The phpdotenv Class is a lightweight composer package to help you load and manage PHP .env variables.",
+	},
+	{
 		type: "PyPI Package",
 		languages: ["py"],
 		tags: ["library", "web scrapper"],
@@ -118,7 +144,8 @@ const projects = [
 		image: null,
 		status: "stable",
 		title: "unLaiked",
-		description: "PHP OOP Like-unlike system (along with MySQL) for comments and posts. Ready to implement to your project!",
+		description:
+			"PHP OOP Like-unlike system (along with MySQL) for comments and posts. Ready to implement to your project!",
 	},
 	{
 		type: "Web App",
@@ -143,6 +170,7 @@ const projects = [
 		image: null,
 		status: "stable",
 		title: "Weather React",
-		description: "React based weather app with sleek minimalistic design. Uses Fetch API and Geolocation to retract weather data.",
+		description:
+			"React based weather app with sleek minimalistic design. Uses Fetch API and Geolocation to retract weather data.",
 	},
 ];
