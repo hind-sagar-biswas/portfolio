@@ -1,144 +1,140 @@
 // PROFILE STYLINGS
 .profile-col {
-	min-height: 100svh;
-	isolation: isolate;
+    min-height: 100svh;
+    isolation: isolate;
 
-	.profile-container {
-		$radius: 50%;
-		$width: 350;
-		$rotation: 10deg;
-		$distance: 15px;
-		$rotator_color: $grey_500;
+    .profile-container {
+        $radius: 50%;
+        $width: 350;
+        $rotation: 10deg;
+        $distance: 15px;
+        $rotator_color: $grey_500;
 
-		position: fixed;
-		top: 50svh;
-		left: calc(100% - ($width * 1px) + 20px);
-		max-width: calc($width * 1px) + calc($distance * $layers);
-		width: 100%;
-		aspect-ratio: 1;
+        position: fixed;
+        top: 50svh;
+        left: calc(100% - ($width * 1px) + 20px);
+        max-width: calc($width * 1px) + calc($distance * $layers);
+        width: 100%;
+        aspect-ratio: 1;
 
-		border-radius: calc($radius + 10px);
-		// border: 10px solid $grey_800;
-		background-color: $grey_800;
-		overflow: visible;
+        border-radius: calc($radius + 10px);
+        // border: 10px solid $grey_800;
+        background-color: $grey_800;
+        overflow: visible;
 
-		transform-origin: center;
-		transform: translate(-50%, -50%);
+        transform-origin: center;
+        transform: translate(-50%, -50%);
 
-		.round-container {
-			width: 100%;
-			aspect-ratio: 1;
-			position: relative;
-			border-radius: inherit;
+        .round-container {
+            width: 100%;
+            aspect-ratio: 1;
+            position: relative;
+            border-radius: inherit;
 
-			.social-container {
-				width: 100%;
-				aspect-ratio: 1;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+            .social-container {
+                width: 100%;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-				.social-list {
-					position: relative;
-					transform-origin: center;
-					transform: translate(-50%, -50%);
+                .social-list {
+                    position: relative;
+                    transform-origin: center;
+                    transform: translate(-50%, -50%);
 
-					.social-link {
-						position: absolute;
-						transform-origin: center;
+                    .social-link {
+                        position: absolute;
+                        transform-origin: center;
 
-						color: $grey_300;
-						font-size: 1.5em;
-						transition: 0.3s font ease-out;
+                        color: $grey_300;
+                        font-size: 1.5em;
+                        transition: 0.3s font ease-out;
 
-						&:hover {
-							font-size: 1.6em;
-						}
+                        &:hover {
+                            font-size: 1.6em;
+                        }
 
-						@for $i from 1 to $social_links + 1 {
-							&:nth-child(#{$i}) {
-								$angle: calc((90 / $social_links) * $i * 1deg);
-								$offset: 4em;
-								$radius: calc(($width / 2 * 1px) + $offset);
+                        @for $i from 1 to $social_links+1 {
+                            &:nth-child(#{$i}) {
+                                $angle: calc((90 / $social_links) * $i * 1deg);
+                                $offset: 4em;
+                                $radius: calc(($width / 2 * 1px) + $offset);
 
-								$x: calc(($radius * math.cos($angle)));
-								$y: calc(($radius * math.sin($angle)));
+                                $x: calc(($radius * math.cos($angle)));
+                                $y: calc(($radius * math.sin($angle)));
 
-								transform: translate(calc(-50% + $x), calc(-50% + $y));
-							}
-						}
-					}
-				}
-			}
+                                transform: translate(calc(-50% + $x), calc(-50% + $y));
+                            }
+                        }
+                    }
+                }
+            }
 
-			.moving-layers {
-				border-radius: inherit;
-				aspect-ratio: 1;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform-origin: center;
-				transform: translate(-50%, -50%);
+            .moving-layers {
+                border-radius: inherit;
+                aspect-ratio: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform-origin: center;
+                transform: translate(-50%, -50%);
 
-				animation-name: profile_layer_rotation;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-				animation-timing-function: ease-in-out;
-			}
+                animation-name: profile_layer_rotation;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+            }
 
-			@for $i from 1 to $layers + 1 {
-				.moving-layers.layer-#{$i} {
-					background-color: $rotator_color;
+            @for $i from 1 to $layers+1 {
+                .moving-layers.layer-#{$i} {
+                    background-color: $rotator_color;
 
-					background-size: 100% 100%;
-					background-position: 0px 0px;
+                    background-size: 100% 100%;
+                    background-position: 0px 0px;
 
-					animation-duration: calc(20s / $i);
+                    animation-duration: calc(20s / $i);
 
-					$gap_width: 1%;
-					$random_percentage: calc(math.floor(math.random() * 100) * 1%);
-					@if $i % 2 == 1 {
-						width: calc(100% - (($i - 1) * $distance));
-						background-image: conic-gradient(
-							from calc((360deg / ($layers + 1)) * $i) at 50% 50%,
-							$grey_800 0% $gap_width,
-							$rotator_color $gap_width $random_percentage,
-							$grey_800
-								$random_percentage
-								calc($random_percentage + $gap_width),
-							$rotator_color calc($random_percentage + $gap_width) 100%
-						);
-					} @else {
-						width: calc(100% - (($i - 1) * $distance));
-						background-image: conic-gradient(
-							from calc((360deg / ($layers + 1)) * $i) at 50% 50%,
-							$rotator_color 0% $gap_width,
-							$grey_800 $gap_width $random_percentage,
-							$rotator_color
-								$random_percentage
-								calc($random_percentage + $gap_width),
-							$grey_800 calc($random_percentage + $gap_width) 100%
-						);
-					}
-				}
-			}
+                    $gap_width: 1%;
+                    $random_percentage: calc(math.floor(math.random() * 100) * 1%);
 
-			img {
-				// clip-path: circle(50% at 50% 50%);
-				border-radius: $radius;
+                    @if $i % 2==1 {
+                        width: calc(100% - (($i - 1) * $distance));
+                        background-image: conic-gradient(from calc((360deg / ($layers + 1)) * $i) at 50% 50%,
+                                $grey_800 0% $gap_width,
+                                $rotator_color $gap_width $random_percentage,
+                                $grey_800 $random_percentage calc($random_percentage + $gap_width),
+                                $rotator_color calc($random_percentage + $gap_width) 100%);
+                    }
 
-				max-width: calc($width * 1px);
-				width: 100%;
-				// aspect-ratio: 1;
+                    @else {
+                        width: calc(100% - (($i - 1) * $distance));
+                        background-image: conic-gradient(from calc((360deg / ($layers + 1)) * $i) at 50% 50%,
+                                $rotator_color 0% $gap_width,
+                                $grey_800 $gap_width $random_percentage,
+                                $rotator_color $random_percentage calc($random_percentage + $gap_width),
+                                $grey_800 calc($random_percentage + $gap_width) 100%);
+                    }
+                }
+            }
 
-				border: 5px solid $rotator_color;
+            img {
+                // clip-path: circle(50% at 50% 50%);
+                border-radius: $radius;
 
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform-origin: center;
-				transform: translate(-50%, -50%);
-			}
-		}
-	}
+                max-width: calc($width * 1px);
+                width: 100%;
+                // aspect-ratio: 1;
+
+                background-color: lighten($color: $rotator_color, $amount: 7%);
+                border: 5px solid $rotator_color;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform-origin: center;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 }
