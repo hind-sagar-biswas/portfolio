@@ -25,9 +25,22 @@ const frameworks = {
 	uikit: { icon: ["fa-brands", "fa-uikit"], name: "UiKit", level: 5 },
 	bs: { icon: ["fa-brands", "fa-bootstrap"], name: "Bootstrap", level: 5 },
 	react: { icon: ["fa-brands", "fa-react"], name: "React", level: 2 },
+	reactNative: { icon: ["fa-brands", "fa-react"], name: "React Native", level: 2 },
+	tailwind: { icon: ["fa-brands", "fa-tailwind"], name: "Tailwind", level: 5 },
 };
 
 const projects = [
+	{
+		type: "PHP Framework",
+		languages: ["php"],
+		tags: ["framework"],
+		source_code_link: "https://github.com/hind-sagar-biswas/php_launcher/",
+		image: null,
+		status: "beta",
+		title: "PHP Launcher",
+		description:
+			"It is a framework for PHP developers to get a quick start with their projects with the highest control and lowest learning curve!",
+	},
 	{
 		type: "Composer Library",
 		languages: ["php"],
